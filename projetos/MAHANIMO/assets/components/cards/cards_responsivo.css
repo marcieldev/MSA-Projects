@@ -1,0 +1,48 @@
+/* ==========================================================
+Projeto.....: MAHANIMO
+Arquivo.....: cards_responsivo.css
+Descrição...: Responsividade dos Cards
+Autor.......: OpenAI + Marciel
+Versão......: 0.1
+========================================================== */
+
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 900px){
+
+    .cards{
+
+        grid-template-columns:
+        repeat(auto-fill, 260px);
+        justify-content:center;
+    }
+}
+
+/* ===========================
+   CELULARES
+=========================== */
+
+@media (max-width: 600px){
+
+    #trending,
+    #anime-catalog{
+
+        padding:50px 0;
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:24px;
+    }
+
+    .card{
+
+        width:260px;
+        height:470px;
+    }
+}

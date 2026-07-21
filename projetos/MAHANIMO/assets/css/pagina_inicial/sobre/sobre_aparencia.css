@@ -1,0 +1,36 @@
+/* ===========================
+   SOBRE - APARÊNCIA
+=========================== */
+
+.about-box{
+
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    text-align:center;
+}
+
+.about-box h2{
+
+    color:#FFFFFF;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.about-box p{
+
+    color:#C9CDD8;
+    line-height:1.9;
+    font-size:1.05rem;
+    margin-bottom:18px;
+}
+
+.about-warning{
+
+    color:#E5E7F0;
+    font-size:.98rem;
+}
+
+.about-warning strong{
+
+    color:#6C3BFF;
+}

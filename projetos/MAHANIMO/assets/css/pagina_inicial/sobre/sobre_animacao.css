@@ -1,0 +1,14 @@
+/* ===========================
+   SOBRE - ANIMAÇÃO
+=========================== */
+
+.about-box{
+
+    transition:.35s;
+}
+
+.about-box:hover{
+
+    transform:translateY(-4px);
+    border-color:rgba(108,59,255,.45);
+}
