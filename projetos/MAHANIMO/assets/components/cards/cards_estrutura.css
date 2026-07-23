@@ -33,14 +33,16 @@ Versão......: 0.7
    GRADE DOS CARDS
 =========================== */
 
-.cards{
-
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fill, 260px);
-    gap:24px;
-    justify-content:start;
-    align-items:start;
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
 }
 
 /* ===========================
@@ -55,6 +57,7 @@ Versão......: 0.7
     overflow: hidden;
     border-radius: 18px;
     position: relative;
+    flex-shrink: 0;
 }
 
 /* ===========================

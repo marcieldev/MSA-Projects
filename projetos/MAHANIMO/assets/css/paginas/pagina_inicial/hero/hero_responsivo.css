@@ -1,0 +1,32 @@
+/* ==========================================================
+Projeto.....: MAHANIMO
+Arquivo.....: hero_responsivo.css
+Descrição...: Responsividade do Hero
+Autor.......: OpenAI + Marciel
+Versão......: 0.1
+========================================================== */
+
+
+/* ==========================================================
+TABLETS E TELAS MENORES
+========================================================== */
+
+@media (max-width: 900px) {
+
+    #hero {
+        display: none;
+    }
+
+}
+
+/* ==========================================================
+CELULAR - ORIENTAÇÃO VERTICAL
+========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+    #hero {
+        display: none;
+    }
+
+}
