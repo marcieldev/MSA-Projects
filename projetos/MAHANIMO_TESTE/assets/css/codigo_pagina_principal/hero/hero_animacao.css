@@ -1,32 +1,35 @@
 /* ==========================================================
-Projeto.....: MAHANIMO
-Arquivo.....: hero_responsivo.css
-Descrição...: Responsividade do Hero
-Autor.......: OpenAI + Marciel
-Versão......: 0.1
+   HERO — ANIMAÇÃO
+   Arquivo: hero_animacao.css
 ========================================================== */
 
 
 /* ==========================================================
-TABLETS E TELAS MENORES
+   BOTÃO HERO
 ========================================================== */
 
-@media (max-width: 900px) {
-
-    #hero {
-        display: none;
-    }
-
+.hero-button {
+  transition:
+    background var(--transition),
+    transform var(--transition);
 }
 
+
+.hero-button:hover {
+  background:
+    var(--primary-hover);
+
+  transform:
+    translateY(-2px);
+}
+
+
 /* ==========================================================
-CELULAR - ORIENTAÇÃO VERTICAL
+   INDICADORES
 ========================================================== */
 
-@media (max-width: 600px) and (orientation: portrait) {
-
-    #hero {
-        display: none;
-    }
-
+.hero-indicator {
+  transition:
+    background var(--transition),
+    width var(--transition);
 }
