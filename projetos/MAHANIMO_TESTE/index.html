@@ -123,7 +123,7 @@
 <!-- ========================================================= -->
 
 
-  <body>
+  <body class="home-page">
     <!-- ========================================================= -->
     <!-- CABEÇALHO -->
     <!-- ========================================================= -->
@@ -283,7 +283,7 @@
             <a href="#animes" class="category-card">
               <div class="category-image">
                 <img
-                  src="assets/img/categories/anime.webp"
+                  src="assets/img/categories/anime_one_piece.jpg"
                   alt="Categoria Anime"
                 />
               </div>
@@ -300,7 +300,7 @@
             <a href="#mangas" class="category-card">
               <div class="category-image">
                 <img
-                  src="assets/img/categories/manga.webp"
+                  src="assets/img/categories/manga.png"
                   alt="Categoria Mangá"
                 />
               </div>
@@ -317,7 +317,7 @@
             <a href="#manhwas" class="category-card">
               <div class="category-image">
                 <img
-                  src="assets/img/categories/manhwa.webp"
+                  src="assets/img/categories/manhwa.jpg"
                   alt="Categoria Manhwa"
                 />
               </div>
@@ -334,7 +334,7 @@
             <a href="#novels" class="category-card">
               <div class="category-image">
                 <img
-                  src="assets/img/categories/novel.webp"
+                  src="assets/img/categories/light_novels.jpg"
                   alt="Categoria Novel"
                 />
               </div>
@@ -351,7 +351,7 @@
             <a href="#filmes" class="category-card">
               <div class="category-image">
                 <img
-                  src="assets/img/categories/filmes.webp"
+                  src="assets/img/categories/filmes.png"
                   alt="Categoria Filmes"
                 />
               </div>
@@ -473,80 +473,244 @@
       </section>
 
       <!-- ========================================================= -->
-      <!-- ANIMES -->
-      <!-- ========================================================= -->
+<!-- ANIMES -->
+<!-- ========================================================= -->
 
-      <section id="animes" class="content-section">
-        <div class="section-container">
-          <header class="section-header">
-            <div>
-              <span class="section-label"> ASSISTA </span>
+<section id="animes" class="content-section">
+  <div class="section-container">
 
-              <h2>Animes</h2>
-            </div>
+    <header class="section-header">
 
-            <a href="#" class="view-all-link"> Ver todos </a>
-          </header>
+      <div>
+        <span class="section-label"> ASSISTA </span>
 
-          <div class="content-grid">
-            <article class="content-card">
-              <div class="card-image">
-                <img src="assets/img/animes/anime-01.webp" alt="Anime" />
-              </div>
+        <h2>Animes</h2>
+      </div>
 
-              <div class="card-content">
-                <h3>Nome do Anime</h3>
+      <a href="#" class="view-all-link">
+        Ver todos
+      </a>
 
-                <p>Anime</p>
+    </header>
 
-                <button type="button" class="card-button">Assistir</button>
-              </div>
-            </article>
+    <!--
+      GRADE DE ANIMES
 
-            <article class="content-card">
-              <div class="card-image">
-                <img src="assets/img/animes/anime-02.webp" alt="Anime" />
-              </div>
+      Esta classe específica permite que o JavaScript
+      identifique somente os cards de Anime no futuro.
 
-              <div class="card-content">
-                <h3>Nome do Anime</h3>
+      No computador:
+      - mantém a grade normal.
 
-                <p>Anime</p>
+      No celular/tablet:
+      - mantém o comportamento horizontal já configurado.
 
-                <button type="button" class="card-button">Assistir</button>
-              </div>
-            </article>
+      Futuramente:
+      - poderá limitar a quantidade exibida na home.
+      - os demais cards continuarão disponíveis na página completa.
+    -->
 
-            <article class="content-card">
-              <div class="card-image">
-                <img src="assets/img/animes/anime-03.webp" alt="Anime" />
-              </div>
+    <div class="content-grid anime-content-grid">
 
-              <div class="card-content">
-                <h3>Nome do Anime</h3>
+      <!-- ===================================================== -->
+      <!-- ANIME 01 -->
+      <!-- ===================================================== -->
 
-                <p>Anime</p>
+      <article class="content-card">
 
-                <button type="button" class="card-button">Assistir</button>
-              </div>
-            </article>
+        <div class="card-image">
 
-            <article class="content-card">
-              <div class="card-image">
-                <img src="assets/img/animes/anime-04.webp" alt="Anime" />
-              </div>
+          <img
+            src="assets/img/animes/anime-01.webp"
+            alt="Anime"
+          />
 
-              <div class="card-content">
-                <h3>Nome do Anime</h3>
-
-                <p>Anime</p>
-
-                <button type="button" class="card-button">Assistir</button>
-              </div>
-            </article>
-          </div>
         </div>
-      </section>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================== -->
+      <!-- ANIME 02 -->
+      <!-- ===================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/animes/anime-02.webp"
+            alt="Anime"
+          />
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================== -->
+      <!-- ANIME 03 -->
+      <!-- ===================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/animes/anime-03.webp"
+            alt="Anime"
+          />
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ===================================================== -->
+      <!-- ANIME 04 -->
+      <!-- ===================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/animes/anime-04.webp"
+            alt="Anime"
+          />
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+      <!-- ===================================================== -->
+      <!-- ANIME 05 -->
+      <!-- ===================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/animes/anime-04.webp"
+            alt="Anime"
+          />
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+      <!-- ===================================================== -->
+      <!-- ANIME 06 -->
+      <!-- ===================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/animes/anime-04.webp"
+            alt="Anime"
+          />
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome do Anime</h3>
+
+          <p>Anime</p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Assistir
+          </button>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
 
       <!-- ========================================================= -->
       <!-- MANGÁS -->

@@ -210,12 +210,13 @@
 }
 
 /* ==========================================================
-   CARDS HORIZONTAIS — TABLET E CELULAR
-   ========================================================== */
+CARDS HORIZONTAIS — HOME
+Tablet e celular
+========================================================== */
 
 @media (max-width: 768px) {
 
-  .content-grid {
+  .home-page .content-grid {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -230,22 +231,34 @@
 
     cursor: grab;
 
-    /* Esconde a barra de rolagem */
     scrollbar-width: none;
   }
 
-  .content-grid::-webkit-scrollbar {
+  .home-page .content-grid::-webkit-scrollbar {
     display: none;
   }
 
-  .content-grid:active {
+  .home-page .content-grid:active {
     cursor: grabbing;
   }
 
-  .content-card {
+  .home-page .content-card {
     flex: 0 0 calc((100% - 16px) / 2);
 
     scroll-snap-align: start;
+  }
+
+}
+
+/* ==========================================================
+   HOME — ANIMES
+   Computador: exibe somente os 4 primeiros cards
+========================================================== */
+
+@media (min-width: 769px) {
+
+  .home-page .anime-content-grid .content-card:nth-child(n + 5) {
+    display: none;
   }
 
 }
