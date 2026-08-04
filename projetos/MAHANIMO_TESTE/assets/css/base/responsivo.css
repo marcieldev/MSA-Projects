@@ -214,11 +214,12 @@ CARDS HORIZONTAIS — HOME
 Tablet e celular
 ========================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   .home-page .content-grid {
     display: flex;
     flex-wrap: nowrap;
+
     overflow-x: auto;
     overflow-y: hidden;
 
@@ -234,13 +235,28 @@ Tablet e celular
     scrollbar-width: none;
   }
 
+
+  /* ========================================================
+  ESCONDE A BARRA DE ROLAGEM
+  ======================================================== */
+
   .home-page .content-grid::-webkit-scrollbar {
     display: none;
   }
 
+
+  /* ========================================================
+  CURSOR AO ARRASTAR
+  ======================================================== */
+
   .home-page .content-grid:active {
     cursor: grabbing;
   }
+
+
+  /* ========================================================
+  TAMANHO DOS CARDS
+  ======================================================== */
 
   .home-page .content-card {
     flex: 0 0 calc((100% - 16px) / 2);
@@ -251,14 +267,181 @@ Tablet e celular
 }
 
 /* ==========================================================
-   HOME — ANIMES
-   Computador: exibe somente os 4 primeiros cards
+HOME — ANIMES
+Controle da quantidade de cards exibidos
 ========================================================== */
 
-@media (min-width: 769px) {
+/* ==========================================================
+TELAS GRANDES
+1001px ou mais
+
+Mostra somente os 4 primeiros cards.
+Os demais ficam disponíveis na página completa.
+========================================================== */
+
+@media (min-width: 1001px) {
 
   .home-page .anime-content-grid .content-card:nth-child(n + 5) {
     display: none;
+  }
+
+}
+
+
+/* ==========================================================
+TABLET E CELULAR
+Até 1000px
+
+Exibe no máximo 10 cards na seção de ANIMES
+da página HOME.
+
+Os cards excedentes ao décimo ficam ocultos
+somente na HOME.
+
+A página completa de ANIMES continuará podendo
+exibir todos os cards.
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .anime-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+/* ==========================================================
+HOME — MANGÁS
+Controle da quantidade de cards exibidos
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .manga-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+
+/* ==========================================================
+HOME — MANHWAS
+Controle da quantidade de cards exibidos
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .manhwa-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+
+/* ==========================================================
+HOME — NOVELS
+Controle da quantidade de cards exibidos
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .novel-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+
+/* ==========================================================
+HOME — FILMES
+Controle da quantidade de cards exibidos
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .movie-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+/* ==========================================================
+HOME — DESTAQUES
+Telas grandes
+1001px ou mais
+
+Mostra somente os 4 primeiros cards.
+Os demais permanecem disponíveis futuramente
+na página completa de Destaques.
+========================================================== */
+
+@media (min-width: 1001px) {
+
+  .home-page .destaque-content-grid .content-card:nth-child(n + 5) {
+    display: none;
+  }
+
+}
+
+
+/* ==========================================================
+HOME — DESTAQUES
+Tablet e celular
+Até 1000px
+
+Permite visualizar no máximo 10 cards.
+Os cards excedentes ao décimo ficam ocultos.
+
+A regra é exclusiva da HOME e da seção DESTAQUES.
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page .destaque-content-grid .content-card:nth-child(n + 11) {
+    display: none;
+  }
+
+}
+
+/* ==========================================================
+HOME — DESTAQUES
+Controle da quantidade de cards exibidos
+========================================================== */
+
+
+/* ==========================================================
+TELAS GRANDES
+1001px ou mais
+Mostra somente os 4 primeiros destaques.
+========================================================== */
+
+@media (min-width: 1001px) {
+
+  .home-page
+  .destaque-content-grid
+  .content-card:nth-child(n + 5) {
+
+    display: none;
+
+  }
+
+}
+
+
+/* ==========================================================
+TABLET E CELULAR
+Até 1000px
+Permite visualizar até 10 destaques.
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .home-page
+  .destaque-content-grid
+  .content-card:nth-child(n + 11) {
+
+    display: none;
+
   }
 
 }

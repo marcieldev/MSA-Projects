@@ -2,33 +2,102 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>MSA Projects</title>
-    <meta name="description" content="Estrutura base da Home do MSA Projects" />
 
-    <!-- =================== OS LINKS DE CSS ============================================       -->
-
-    <!-- =================== FIM DOS LINKS DE CSS ============================================   -->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <button>
-      <a href="projetos/MAHANIMO/index.html" target="_blank">
-        Acessar versão antiga de MAHANIMO
-      </a>
-    </button>
-    <br />
-    <br />
-    <button>
-      <a href="projetos/MAHANIMO_NOVO/index.html" target="_blank">
-        Acessar versão nova de MAHANIMO
-      </a>
-    </button>
-    <br />
-    <br />
-    <button>
-      <a href="projetos/MAHANIMO_TESTE/index.html" target="_blank">
-        Acessar versão de teste de MAHANIMO
-      </a>
-    </button>
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <a href="index.html" class="logo"> MSA PROJECTS </a>
+
+        <nav class="main-nav">
+          <a href="#"> Projetos </a>
+
+          <a href="#"> Categorias </a>
+
+          <a href="#"> Sobre </a>
+
+          <button type="button" class="nav-community" id="open-community">
+            Comunidade
+          </button>
+        </nav>
+
+        <!-- Menu mobile -->
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main>
+      <!-- Apresentação -->
+
+      <section class="home-intro">
+        <div class="home-intro-content">
+          <h1>MSA PROJECTS</h1>
+
+          <p>Um espaço para conhecer meus projetos.</p>
+
+          <p>
+            Explore projetos oficiais, experiências em desenvolvimento e
+            criações feitas simplesmente por diversão.
+          </p>
+
+          <a href="#" class="btn-primary"> Explorar Projetos </a>
+        </div>
+      </section>
+
+      <!-- Informações -->
+
+      <section class="home-about">
+        <div class="home-about-content">
+          <h2>Projetos, ideias e criações</h2>
+
+          <p>
+            O MSA Projects reúne projetos desenvolvidos e apresentados em um
+            único espaço.
+          </p>
+
+          <p>
+            Aqui você poderá conhecer projetos oficiais, acompanhar experiências
+            em desenvolvimento e descobrir algumas criações feitas simplesmente
+            para se divertir.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="site-footer">
+      <p>© 2026 MSA Projects</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -112,11 +112,21 @@
 />
 
 <!-- ========================================================= -->
+<!-- CSS MODAL / PARA COMUNIDADE -->
+<!-- ========================================================= -->
+    <link rel="stylesheet" href="assets/css/codigo_pagina_principal/modal/modal_estrutura.css" />
+    <link rel="stylesheet" href="assets/css/codigo_pagina_principal/modal/modal_aparencia.css" />
+    <link rel="stylesheet" href="assets/css/codigo_pagina_principal/modal/modal_animacao.css" />  
+
+<!-- ========================================================= -->
 <!-- RESPONSIVIDADE -->
 <!-- IMPORTANTE: DEVE SER O ÚLTIMO CSS -->
 <!-- ========================================================= -->
 
-<link rel="stylesheet" href="assets/css/base/responsivo.css" />
+<link
+  rel="stylesheet"
+  href="assets/css/base/responsivo.css"
+/>
 
 <!-- ========================================================= -->
 <!-- FIM DOS LINKS DE CSS -->
@@ -160,6 +170,12 @@
 
             <li>
               <a href="#filmes" class="navigation-link"> Filmes </a>
+            </li>
+
+            <li>
+              <a href="#" class="community-button" id="communityButton">
+                Comunidade
+              </a>
             </li>
           </ul>
         </nav>
@@ -367,110 +383,196 @@
       </section>
 
       <!-- ========================================================= -->
-      <!-- DESTAQUES -->
-      <!-- ========================================================= -->
+<!-- DESTAQUES -->
+<!-- ========================================================= -->
 
-      <section id="destaques" class="content-section">
-        <div class="section-container">
-          <header class="section-header">
-            <div>
-              <span class="section-label"> EM DESTAQUE </span>
+<section id="destaques" class="content-section">
 
-              <h2>Conteúdos em destaque</h2>
-            </div>
+  <div class="section-container">
 
-            <a href="#" class="view-all-link"> Ver todos </a>
-          </header>
+    <header class="section-header">
 
-          <div class="content-grid">
-            <!-- DESTAQUE 01 -->
+      <div>
+        <span class="section-label"> EM DESTAQUE </span>
 
-            <article class="content-card">
-  <div class="card-image">
-    <img
-      src="assets/img/destaques/slime-datta-ken-anime-slime_destaque_1.jpg"
-      alt="Conteúdo em destaque"
-    />
+        <h2>Conteúdos em destaque</h2>
+      </div>
 
-    <span class="card-type">Anime</span>
-  </div>
+      <a href="#" class="view-all-link">
+        Ver todos
+      </a>
 
-  <div class="card-content">
-    <h3>Nome da obra</h3>
+    </header>
 
-    <p>Anime em destaque no MAHANIMO.</p>
 
-    <button type="button" class="card-button">
-      Ver detalhes
-    </button>
-  </div>
-</article>
+    <!-- ===================================================== -->
+    <!-- GRADE DE DESTAQUES -->
+    <!-- ===================================================== -->
 
-            <!-- DESTAQUE 02 -->
+    <div class="content-grid destaque-content-grid">
 
-            <article class="content-card">
-              <div class="card-image">
-                <img
-                  src="assets/img/destaques/destaque-02.webp"
-                  alt="Conteúdo em destaque"
-                />
 
-                <span class="card-type"> Mangá </span>
-              </div>
+      <!-- =================================================== -->
+      <!-- DESTAQUE 01 -->
+      <!-- =================================================== -->
 
-              <div class="card-content">
-                <h3>Nome da obra</h3>
+      <article class="content-card">
 
-                <p>Mangá em destaque no MAHANIMO.</p>
+        <div class="card-image">
 
-                <button type="button" class="card-button">Ver detalhes</button>
-              </div>
-            </article>
+          <img
+            src="assets/img/destaques/destaque-01.webp"
+            alt="Conteúdo em destaque"
+          />
 
-            <!-- DESTAQUE 03 -->
+          <span class="card-type">
+            Anime
+          </span>
 
-            <article class="content-card">
-              <div class="card-image">
-                <img
-                  src="assets/img/destaques/destaque-03.webp"
-                  alt="Conteúdo em destaque"
-                />
-
-                <span class="card-type"> Manhwa </span>
-              </div>
-
-              <div class="card-content">
-                <h3>Nome da obra</h3>
-
-                <p>Manhwa em destaque no MAHANIMO.</p>
-
-                <button type="button" class="card-button">Ver detalhes</button>
-              </div>
-            </article>
-
-            <!-- DESTAQUE 04 -->
-
-            <article class="content-card">
-              <div class="card-image">
-                <img
-                  src="assets/img/destaques/destaque-04.webp"
-                  alt="Conteúdo em destaque"
-                />
-
-                <span class="card-type"> Novel </span>
-              </div>
-
-              <div class="card-content">
-                <h3>Nome da obra</h3>
-
-                <p>Novel em destaque no MAHANIMO.</p>
-
-                <button type="button" class="card-button">Ver detalhes</button>
-              </div>
-            </article>
-          </div>
         </div>
-      </section>
+
+        <div class="card-content">
+
+          <h3>Nome da obra</h3>
+
+          <p>
+            Anime em destaque no MAHANIMO.
+          </p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Ver detalhes
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================== -->
+      <!-- DESTAQUE 02 -->
+      <!-- =================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/destaques/destaque-02.webp"
+            alt="Conteúdo em destaque"
+          />
+
+          <span class="card-type">
+            Mangá
+          </span>
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome da obra</h3>
+
+          <p>
+            Mangá em destaque no MAHANIMO.
+          </p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Ver detalhes
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================== -->
+      <!-- DESTAQUE 03 -->
+      <!-- =================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/destaques/destaque-03.webp"
+            alt="Conteúdo em destaque"
+          />
+
+          <span class="card-type">
+            Manhwa
+          </span>
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome da obra</h3>
+
+          <p>
+            Manhwa em destaque no MAHANIMO.
+          </p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Ver detalhes
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================== -->
+      <!-- DESTAQUE 04 -->
+      <!-- =================================================== -->
+
+      <article class="content-card">
+
+        <div class="card-image">
+
+          <img
+            src="assets/img/destaques/destaque-04.webp"
+            alt="Conteúdo em destaque"
+          />
+
+          <span class="card-type">
+            Novel
+          </span>
+
+        </div>
+
+        <div class="card-content">
+
+          <h3>Nome da obra</h3>
+
+          <p>
+            Novel em destaque no MAHANIMO.
+          </p>
+
+          <button
+            type="button"
+            class="card-button"
+          >
+            Ver detalhes
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
 
       <!-- ========================================================= -->
 <!-- ANIMES -->
@@ -728,7 +830,7 @@
             <a href="#" class="view-all-link"> Ver todos </a>
           </header>
 
-          <div class="content-grid">
+          <div class="content-grid manga-content-grid">
             <article class="content-card">
               <div class="card-image">
                 <img src="assets/img/mangas/manga-01.webp" alt="Mangá" />
@@ -804,7 +906,7 @@
             <a href="#" class="view-all-link"> Ver todos </a>
           </header>
 
-          <div class="content-grid">
+          <div class="content-grid manhwa-content-grid">
             <article class="content-card">
               <div class="card-image">
                 <img src="assets/img/manhwas/manhwa-01.webp" alt="Manhwa" />
@@ -880,7 +982,7 @@
             <a href="#" class="view-all-link"> Ver todos </a>
           </header>
 
-          <div class="content-grid">
+          <div class="content-grid novel-content-grid">
             <article class="content-card">
               <div class="card-image">
                 <img src="assets/img/novels/novel-01.webp" alt="Novel" />
@@ -956,7 +1058,7 @@
             <a href="#" class="view-all-link"> Ver todos </a>
           </header>
 
-          <div class="content-grid">
+          <div class="content-grid movie-content-grid">
             <article class="content-card">
               <div class="card-image">
                 <img src="assets/img/filmes/filme-01.webp" alt="Filme" />
@@ -1088,6 +1190,91 @@
         <p>© 2026 MAHANIMO. Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script src="js/hero_home/hero.js"></script>
+
+
+<!-- ========================================================= -->
+<!-- MODAL DA COMUNIDADE -->
+<!-- ========================================================= -->
+
+<div
+  class="community-modal"
+  id="communityModal"
+  aria-hidden="true"
+>
+
+  <div class="community-modal-overlay"></div>
+
+  <div class="community-modal-content">
+
+    <button
+      type="button"
+      class="community-modal-close"
+      id="communityModalClose"
+      aria-label="Fechar janela"
+    >
+      &times;
+    </button>
+
+
+    <span class="section-label">
+      COMUNIDADE
+    </span>
+
+
+    <h2 id="communityModalTitle">
+      Faça parte da comunidade MAHANIMO
+    </h2>
+
+
+    <p>
+      Entre no Discord oficial do MAHANIMO para acompanhar
+      novidades, conversar com a comunidade e participar
+      enviando sugestões para o projeto.
+    </p>
+
+
+    <div class="community-modal-actions">
+
+      <a
+        href="https://discord.gg/sT7FDnFTW"
+        class="card-button"
+        id="communityDiscordButton"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Entrar no Discord
+      </a>
+
+      <button
+    type="button"
+    class="card-button"
+    id="communitySuggestionButton"
+  >
+    Sugestão ao MAHANIMO
+  </button>
+
+
+      <button
+        type="button"
+        class="card-button secondary"
+        data-close-community-modal
+      >
+        Fechar
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT -->
+  <!-- ========================================================= -->
+
+    <script src="data/conteudos.js"></script>
+    <script src="js/home_page/detaques/destaques.js"></script>
+    <script src="js/home_page/hero_home/hero.js"></script>
+    <script src="js/comunidade/comunidade.js"></script>
   </body>
 </html>
