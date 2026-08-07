@@ -1,0 +1,309 @@
+/*
+=========================================================
+MSA PROJECTS
+
+Arquivo:
+home.css
+
+Etapa:
+01 - Layout Base
+
+Responsabilidade:
+Organizar a estrutura principal da Home.
+
+Nesta etapa:
+
+✔ Sidebar
+✔ Conteúdo principal
+✔ Espaçamento
+✔ Posicionamento
+
+Ainda NÃO possui:
+
+✘ Modais
+✘ Cards
+✘ Timeline
+✘ Animações
+
+=========================================================
+*/
+
+
+
+/* ==========================================================
+01 - LAYOUT PRINCIPAL
+Responsabilidade:
+Organizar toda a estrutura da Home.
+
+Nesta etapa ele apenas posiciona:
+• Sidebar
+• Conteúdo Principal
+
+Não controla aparência.
+========================================================== */
+
+.profile-layout{
+
+    /*
+    Ocupa praticamente toda a tela.
+    */
+
+    width:100%;
+
+    /*
+    Limita apenas em monitores muito grandes.
+    */
+
+    max-width:1800px;
+
+    /*
+    Não centraliza mais a página.
+    */
+
+    margin:0;
+
+    /*
+    Espaçamento das bordas da janela.
+
+    Esquerda menor para aproximar
+    a Sidebar da margem.
+    */
+
+    padding:
+
+    30px   /* topo */
+
+    20px   /* direita */
+
+    30px   /* baixo */
+
+    12px;  /* esquerda */
+
+    /*
+    Divide Sidebar e Conteúdo.
+    */
+
+    display:grid;
+
+    /*
+    Sidebar fixa.
+
+    Conteúdo ocupa o restante.
+    */
+
+    grid-template-columns:290px 1fr;
+
+    /*
+    Distância entre painel e conteúdo.
+    */
+
+    gap:40px;
+
+    /*
+    Ambos começam pelo topo.
+    */
+
+    align-items:start;
+
+}
+
+
+
+
+
+
+/*
+=========================================================
+02 - SIDEBAR
+
+Painel de identidade do projeto.
+
+Ele funciona como um CARD.
+
+Não é modal.
+
+=========================================================
+*/
+
+
+.profile-sidebar {
+
+
+    /*
+    Largura fixa.
+
+    O painel nunca cresce.
+
+    */
+
+    width:310px;
+
+    max-width:310px;
+
+    min-width:310px;
+
+
+
+    /*
+    Altura baseada apenas
+    no conteúdo interno.
+
+    */
+
+    height:fit-content;
+
+
+
+    /*
+    Espaçamento interno.
+
+    */
+
+    padding:25px;
+
+
+
+    /*
+    Cantos arredondados.
+
+    */
+
+    border-radius:18px;
+
+
+
+    /*
+    Fundo discreto.
+
+    */
+
+    background:
+    rgba(255,255,255,.03);
+
+
+
+    /*
+    Separação visual.
+
+    */
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+
+
+
+/*
+=========================================================
+03 - AVATAR
+
+Representação visual do perfil.
+
+Futuramente receberá
+uma imagem personalizada.
+
+=========================================================
+*/
+
+
+.profile-avatar {
+
+
+    width:140px;
+
+    height:140px;
+
+
+
+    border-radius:50%;
+
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+
+    font-size:4rem;
+
+
+
+    background:
+    rgba(255,255,255,.05);
+
+
+
+    border:
+    1px solid rgba(255,255,255,.10);
+
+
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+
+/*
+=========================================================
+04 - CONTEÚDO PRINCIPAL
+
+Área onde serão apresentados:
+
+- Sobre
+- Estatísticas
+- Cards
+- Timeline
+
+=========================================================
+*/
+
+
+.profile-content {
+
+
+    /*
+    Ocupa o espaço restante.
+
+    */
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+.profile-introduction {
+
+
+    padding:30px;
+
+
+
+    border-radius:18px;
+
+
+
+    background:
+    rgba(255,255,255,.03);
+
+
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+}

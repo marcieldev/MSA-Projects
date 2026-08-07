@@ -1,0 +1,51 @@
+/* ==========================================================
+   BASE DO SITE
+========================================================== */
+
+body {
+
+    background: var(--cor-fundo);
+
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-principal);
+
+    min-height: 100vh;
+
+    line-height: 1.6;
+
+}
+
+main {
+
+    width: 100%;
+
+}
+
+.container {
+
+    width: min(90%, var(--container));
+
+    margin: 0 auto;
+
+}
+
+section {
+
+    padding: 60px 0;
+
+}
+
+h1,
+h2,
+h3 {
+
+    font-weight: 700;
+
+}
+
+p {
+
+    color: var(--cor-texto-secundario);
+
+}

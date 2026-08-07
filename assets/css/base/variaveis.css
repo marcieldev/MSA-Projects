@@ -1,0 +1,39 @@
+/* ==========================================================
+   VARIÁVEIS GLOBAIS
+========================================================== */
+
+:root {
+
+    /* Cores */
+
+    --cor-fundo: #111111;
+    --cor-superficie: #1a1a1a;
+
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #cfcfcf;
+
+    --cor-borda: #2c2c2c;
+
+    --cor-destaque: #ffffff;
+
+    /* Fonte */
+
+    --fonte-principal: "Segoe UI", Arial, sans-serif;
+
+    /* Espaçamentos */
+
+    --container: 1200px;
+
+    --espaco-pequeno: 10px;
+    --espaco-medio: 20px;
+    --espaco-grande: 40px;
+
+    /* Bordas */
+
+    --borda-radius: 8px;
+
+    /* Transições */
+
+    --transicao: .25s ease;
+
+}

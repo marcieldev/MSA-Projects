@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -7,96 +8,201 @@
 
     <title>MSA Projects</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ========================================================= -->
+    <!-- CSS -->
+    <!-- ========================================================= -->
+
+    <!-- BASE -->
+
+    <link rel="stylesheet" href="assets/css/base/reset.css" />
+    <link rel="stylesheet" href="assets/css/base/variaveis.css" />
+    <link rel="stylesheet" href="assets/css/base/base.css" />
+
+    <!-- COMPONENTES -->
+
+    <link rel="stylesheet" href="assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="assets/css/componentes/footer.css" />
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css" />
+    <link rel="stylesheet" href="assets/css/componentes/modais.css" />
+
+    <!-- PÁGINAS -->
+
+    <link rel="stylesheet" href="assets/css/paginas/home/layout_home.css" />
+    <link rel="stylesheet" href="assets/css/paginas/home/painel_home.css" />
+    <link rel="stylesheet" href="assets/css/paginas/home/timeline_home.css" />
+    <link rel="stylesheet" href="assets/css/paginas/home/modais_home.css" />
+    <link rel="stylesheet" href="assets/css/paginas/home/cards_home.css" />
+    <link rel="stylesheet" href="assets/css/paginas/home/animacoes_home.css" />
+
+    <!-- RESPONSIVO -->
+
+    <link rel="stylesheet" href="assets/css/responsivo/responsivo.css" />
   </head>
 
   <body>
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
+    <!-- =====================================================
+     CONTEÚDO PRINCIPAL DA HOME
+===================================================== -->
 
-    <header class="site-header">
-      <div class="header-container">
-        <a href="index.html" class="logo"> MSA PROJECTS </a>
+    <main class="home">
+      <section class="profile-layout">
+        <!-- =================================================
+             SIDEBAR
+             Área de identidade do MSA Projects
+        ================================================== -->
 
-        <nav class="main-nav">
-          <a href="#"> Projetos </a>
+        <aside class="profile-sidebar">
+          <!-- ==========================================
+         FOTO DO PERFIL
+    =========================================== -->
 
-          <a href="#"> Categorias </a>
+          <div class="profile-avatar">
+            <img
+              src="assets/img/home/foto_perfil_1/3.jpg"
+              alt="Avatar do MSA Projects"
+            />
+          </div>
 
-          <a href="#"> Sobre </a>
+          <!-- ==========================================
+         NOME
+    =========================================== -->
 
-          <button type="button" class="nav-community" id="open-community">
-            Comunidade
-          </button>
-        </nav>
+          <a href="index.html" class="profile-brand">
+            <h1>MSA PROJECTS</h1>
+          </a>
 
-        <!-- Menu mobile -->
+          <!-- ==========================================
+         BIO
+    =========================================== -->
 
-        <button
-          type="button"
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menu"
-        >
-          ☰
-        </button>
-      </div>
-    </header>
+          <p class="profile-bio">Projetos • Experimentos • Ideias</p>
 
-    <!-- =========================
-         CONTEÚDO PRINCIPAL
-    ========================== -->
+          <div class="sidebar-divider"></div>
 
-    <main>
-      <!-- Apresentação -->
+          <!-- ==========================================
+         NAVEGAÇÃO
+    =========================================== -->
 
-      <section class="home-intro">
-        <div class="home-intro-content">
-          <h1>MSA PROJECTS</h1>
+          <div class="sidebar-section">
+            <h2 class="sidebar-title">Navegação</h2>
 
-          <p>Um espaço para conhecer meus projetos.</p>
+            <nav class="profile-navigation">
+              <a href="index.html" class="nav-item active">
+                <span class="nav-icon">🏠</span>
 
-          <p>
-            Explore projetos oficiais, experiências em desenvolvimento e
-            criações feitas simplesmente por diversão.
-          </p>
+                <span class="nav-text"> Início </span>
 
-          <a href="#" class="btn-primary"> Explorar Projetos </a>
-        </div>
-      </section>
+                <span class="nav-arrow"> › </span>
+              </a>
 
-      <!-- Informações -->
+              <a href="#" class="nav-item">
+                <span class="nav-icon"> 📁 </span>
 
-      <section class="home-about">
-        <div class="home-about-content">
-          <h2>Projetos, ideias e criações</h2>
+                <span class="nav-text"> Projetos </span>
 
-          <p>
-            O MSA Projects reúne projetos desenvolvidos e apresentados em um
-            único espaço.
-          </p>
+                <span class="nav-arrow"> › </span>
+              </a>
 
-          <p>
-            Aqui você poderá conhecer projetos oficiais, acompanhar experiências
-            em desenvolvimento e descobrir algumas criações feitas simplesmente
-            para se divertir.
-          </p>
-        </div>
+              <a href="#" class="nav-item">
+                <span class="nav-icon"> 👥 </span>
+
+                <span class="nav-text"> Comunidade </span>
+
+                <span class="nav-arrow"> › </span>
+              </a>
+
+              <a href="#" class="nav-item">
+                <span class="nav-icon"> 📈 </span>
+
+                <span class="nav-text"> Evolução </span>
+
+                <span class="nav-arrow"> › </span>
+              </a>
+
+              <a href="#" class="nav-item">
+                <span class="nav-icon"> ℹ </span>
+
+                <span class="nav-text"> Sobre </span>
+
+                <span class="nav-arrow"> › </span>
+              </a>
+            </nav>
+          </div>
+
+          <div class="sidebar-divider"></div>
+
+          <!-- ==========================================
+         PERFIS
+    =========================================== -->
+
+          <div class="sidebar-section">
+            <h2 class="sidebar-title">Perfis</h2>
+
+            <button class="sidebar-button">💻 GitHub</button>
+          </div>
+
+          <div class="sidebar-divider"></div>
+
+          <!-- ==========================================
+         COMUNIDADE
+    =========================================== -->
+
+          <div class="sidebar-section">
+            <h2 class="sidebar-title">Comunidade</h2>
+
+            <button class="sidebar-button">💬 Discord</button>
+          </div>
+
+          <div class="sidebar-divider"></div>
+
+          <!-- ==========================================
+         STATUS
+    =========================================== -->
+
+          <div class="sidebar-section">
+            <h2 class="sidebar-title">Status</h2>
+
+            <div class="project-status">
+              <p class="status-online">🟢 Em desenvolvimento</p>
+
+              <small> Versão 0.1 Alpha </small>
+            </div>
+          </div>
+        </aside>
+
+        <!-- =================================================
+             CONTEÚDO PRINCIPAL
+        ================================================== -->
+
+        <section class="profile-content">
+          <div class="profile-introduction">
+            <h2>Sobre o MSA Projects</h2>
+
+            <p>
+              Um espaço criado para reunir projetos, experiências e ideias em
+              constante evolução.
+            </p>
+
+            <p>
+              Aqui novas possibilidades são exploradas, desenvolvidas e
+              transformadas em projetos.
+            </p>
+          </div>
+        </section>
       </section>
     </main>
 
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
+    <!-- ========================================================= -->
+    <!-- RODAPÉ -->
+    <!-- ========================================================= -->
 
     <footer class="site-footer">
       <p>© 2026 MSA Projects</p>
     </footer>
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
 
     <script src="assets/js/main.js"></script>
   </body>

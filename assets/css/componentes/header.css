@@ -1,0 +1,152 @@
+/* ==========================================================
+   ARQUIVO: header.css
+
+   STATUS:
+   🚧 Em desenvolvimento
+
+   RESPONSABILIDADE:
+   - Estrutura do cabeçalho
+   - Logo
+   - Menu Desktop
+   - Menu Mobile
+   - Header com efeito de scroll
+
+   NÃO DEVE CONTER:
+   - Home
+   - Footer
+   - Modais
+   - Cards
+
+========================================================== */
+
+/* ==========================================================
+   ÍNDICE
+
+   1. Cabeçalho
+   2. Container
+   3. Logo
+   4. Menu Desktop
+   5. Menu Mobile
+   6. Estado Scroll
+
+========================================================== */
+
+/* ==========================================================
+   1. CABEÇALHO
+========================================================== */
+
+.cabecalho {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    background: var(--cor-fundo);
+
+    border-bottom: 1px solid var(--cor-borda);
+
+    z-index: 1000;
+
+}
+
+/* ==========================================================
+   2. CONTAINER
+========================================================== */
+
+.cabecalho-container {
+
+    width: min(92%, var(--container));
+
+    height: 70px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+/* ==========================================================
+   3. LOGO
+========================================================== */
+
+.logo {
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: var(--cor-texto);
+
+    transition: var(--transicao);
+
+}
+
+/* ==========================================================
+   4. MENU
+========================================================== */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+.menu a {
+
+    color: var(--cor-texto);
+
+    transition: var(--transicao);
+
+}
+
+.menu button {
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--cor-texto);
+
+    cursor: pointer;
+
+    font: inherit;
+
+    transition: var(--transicao);
+
+}
+
+/* ==========================================================
+   5. HOVER
+========================================================== */
+
+.menu a:hover,
+.menu button:hover,
+.logo:hover {
+
+    opacity: .75;
+
+}
+
+/* ==========================================================
+   6. MENU MOBILE
+========================================================== */
+
+.menu-mobile {
+
+    display: none;
+
+}
